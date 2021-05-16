@@ -1,0 +1,22 @@
+<div class="content">
+    <div class="grid">
+        {% for realisation in realisations %}
+            <div class="grid__item" data-size="{{ realisation.size }}" data-filter="{{ realisation.filter }}">
+                <a href="{% if 'links/' in realisation.link %}{{ asset(realisation.link) }}{% else %}{{ realisation.link }}{% endif %}" class="img-wrap"><img src="{{ asset(realisation.cover) }}" alt="{{ realisation.filter }}" />
+                    <div class="description description--grid">
+                        <h3>{{ realisation.title }}</h3>
+                        <p>{{ realisation.description }}.</p>
+                        <em>&mdash; Christophe WANG</em>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <!-- /grid -->
+
+    <div class="preview">
+        <button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+        <div class="description description--preview"></div>
+    </div>
+    <!-- /preview -->
+</div>

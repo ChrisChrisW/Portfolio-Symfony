@@ -1,0 +1,21 @@
+{% extends 'layout/layout.html.twig' %}
+
+{% block title %}{{ stl }} en 3D{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="container" data-stl="{{ stl }}.stl"></div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('js/show') }}
+{% endblock %}

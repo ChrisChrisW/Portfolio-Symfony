@@ -1,0 +1,26 @@
+h1 {
+  color: $black-lighter;
+  text-align: center;
+  font-size: 2.6rem;
+  padding: 3rem 0 0 0;
+}
+
+.scroll-top {
+  &.hidden {
+    display: none;
+    overflow: hidden;
+  }
+
+  cursor: pointer;
+  color: $gray-light;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    padding: 3rem 0 5rem 0;
+  }
+}

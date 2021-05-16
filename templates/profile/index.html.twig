@@ -1,0 +1,50 @@
+{% extends 'layout/layout-main.html.twig' %}
+
+{% block title %}Profil{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('css/profile') }}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="card middle">
+            <div class="front">
+                <div class="brightness"></div>
+                <div class="brightness"></div>
+                <div class="brightness"></div>
+            </div>
+
+            <div class="back">
+                <div class="brightness"></div>
+                <div class="brightness"></div>
+                <div class="brightness"></div>
+
+                <header>
+                    <div class="avatar">
+                        <img src="{{ asset(profile.cover) }}" alt="photo {{ profile.firstname}} {{ profile.lastname }}" />
+                    </div>
+                </header>
+
+                <h3>{{ profile.firstname}} {{ profile.lastname }}</h3>
+
+                <div class="description">
+                    {{ profile.description }}
+                </div>
+
+                <div class="contacts">
+                    <a href="{{ asset(profile.cv) }}" target="_blank" title="CV"><i class="fas fa-user-circle"></i></a>
+                    <a href="{{ asset(profile.portfolio) }}" target="_blank" title="Porfolio"><i class="fas fa-file-pdf"></i></a>
+                </div>
+
+                <footer>
+                    <p>
+                        <a href="mailto:christophe.wang.pro@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/christophe-wang-39a845182/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+{% endblock %}

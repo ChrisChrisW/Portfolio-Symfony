@@ -1,0 +1,114 @@
+/* -------
+CONTAIN ON RIGHT
+----------*/
+.boxChoice {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.selectFile {
+  height: 10%;
+}
+
+.selectFile > p {
+  font-size: 16px;
+  text-align: center;
+}
+.select-block {
+  position: relative;
+  height: 50px;
+}
+
+.select-block > svg,
+.select-block > input {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.svg-circleplus {
+  height: 100%;
+}
+
+.inputFile {
+  width: 100%;
+  height: 100%;
+  opacity: 0.01;
+}
+
+.boxWrapper {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  column-gap: 8%;
+  row-gap: 8%;
+  margin-left: 2%;
+  margin-right: 2%;
+
+  height: 35%;
+  overflow: hidden;
+  scrollbar-width: thin;
+}
+.boxWrapper:hover {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.boxWrapper > button {
+  background: #e7f0ef;
+  border-radius: 10px;
+  border: none;
+  height: 100px;
+  word-break: break-word;
+  cursor: pointer;
+}
+.boxWrapper > button[disabled="disabled"] {
+  background: #a9a9a9;
+  cursor: default;
+}
+
+/*
+  Slider
+*/
+.containSlider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20%;
+}
+
+.slider {
+  display: flex;
+  line-height: 1.06;
+  font-size: 16px;
+  flex-direction: column;
+}
+
+.slider > p {
+  font-size: 16px;
+}
+
+#expoter > button {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background: #e8efef;
+  color: #186055;
+}
+
+#expoter > .active {
+  background: #186055;
+  color: #e8efef;
+}
+
+@media (max-width: 700px) {
+  .boxWrapper > button {
+    height: 65px;
+  }
+}

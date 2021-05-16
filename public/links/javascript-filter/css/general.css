@@ -1,0 +1,59 @@
+/* -------
+GENERALS
+----------*/
+@font-face {
+  font-family: LatoBold;
+  src: url("../assets/fonts/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: LatoRegular;
+  src: url("../assets/fonts/Lato-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: LatoRegular;
+  font-size: 20px;
+  color: #0e3b36;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-family: LatoBold;
+  font-size: 21px;
+}
+
+.wrapper {
+  width: 95%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 73% 25%;
+  grid-template-rows: 10% 90%;
+  column-gap: 2%;
+}
+
+.boxRow1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.boxRow2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media (max-width: 700px) {
+  * {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    grid-template-columns: 100%;
+  }
+}

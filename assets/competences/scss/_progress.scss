@@ -1,0 +1,39 @@
+.skill-container {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 20% 10px 20%;
+
+  .bar {
+    position: relative;
+    width: 100%;
+    color: $black-lighter;
+
+    .progressbar {
+      height: 10px;
+      border-radius: 5px;
+
+      &.front {
+        background: rgb(random(255), random(255), random(255));
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+      }
+
+      &.back {
+        width: 100%;
+        background: scale-color($gray, $lightness: 80%);
+        margin-top: 10px;
+
+        span {
+          position: absolute;
+          right: 5px;
+          font-size: 12px;
+          color: $black-lighter;
+          bottom: 10px;
+        }
+      }
+    }
+  }
+}

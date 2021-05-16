@@ -1,0 +1,23 @@
+{% set currentPath = path(app.request.attributes.get('_route')) %}
+
+<div id="menu">
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="menu-inner">
+        <ul>
+            <li><a href="{{ path('homepage') }}" {% if currentPath == path('homepage') %}class="active"{% endif %}>Accueil</a></li>
+            <li><a href="{{ path('profile') }}" {% if currentPath == path('profile') %}class="active"{% endif %}>Profil</a></li>
+            <li><a href="{{ path('competences') }}" {% if currentPath == path('competences') %}class="active"{% endif %}>Compétences</a></li>
+            <li><a href="{{ path('realisations') }}" {% if currentPath == path('realisations') %}class="active"{% endif %}>Réalisations</a></li>
+            <li><a href="{{ path('contact') }}" {% if currentPath == path('contact') %}class="active"{% endif %}>Contact</a></li>
+        </ul>
+    </div>
+
+    <svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
+    </svg>
+</div>

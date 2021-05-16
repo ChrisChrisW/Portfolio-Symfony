@@ -1,0 +1,25 @@
+{% extends 'layout/layout-main.html.twig' %}
+
+{% block title %}Réalisations{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('css/realisations') }}
+{% endblock %}
+
+{% block content %}
+    <div class="scroll-top hidden">
+        <i class="fas fa-chevron-circle-up fa-3x"></i>
+    </div>
+
+    <div class="container">
+        {% include 'realisations/_header.html.twig' only %}
+
+        {% include 'realisations/_content.html.twig' with {'realisations': realisations} only %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('js/realisations') }}
+{% endblock %}

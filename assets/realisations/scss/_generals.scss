@@ -1,0 +1,90 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'codropsicons';
+  src: url("../../fonts/codropsicons/codropsicons.eot");
+  src: url("../../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../../fonts/codropsicons/codropsicons.woff") format("woff"), url("../../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
+}
+
+@font-face {
+  font-family: 'camera-icons';
+  src: url("../../fonts/camera-icons/camera-icons.eot?7h6q4p");
+  src: url("../../fonts/camera-icons/camera-icons.eot?#iefix7h6q4p") format("embedded-opentype"), url("../../fonts/camera-icons/camera-icons.woff?7h6q4p") format("woff"), url("../../fonts/camera-icons/camera-icons.ttf?7h6q4p") format("truetype"), url("../../fonts/camera-icons/camera-icons.svg?7h6q4p#camera-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    /* Chrome, Safari, Edge */
+    display: none;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: '';
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: $white;
+  background: $black-light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+a {
+  outline: none;
+  color: $color-primary;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: $white;
+}
+
+button:focus {
+  outline: none;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.scroll-top {
+  &.hidden {
+    display: none;
+    overflow: hidden;
+  }
+
+  cursor: pointer;
+  color: $gray-light;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}

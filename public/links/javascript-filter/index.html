@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Exercice sur les Canvas en Vanilla JS">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<title>Mockup Canvas en Vanilla JS - Christophe WANG </title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="boxImg boxRow1">
+			<h1>Modifier mon image</h1>
+		</div>
+		<div class="boxImg boxRow2">
+			<div class="containPhoto">
+				<img class="photo" id="photo">
+				<input type="file" name="file" class="dropFile" id="dropbox" multiple accept="image/*" multiple
+					onchange="handleFiles(this.files)">
+			</div>
+		</div>
+
+		<div class="boxChoice boxRow2">
+			<div class="selectFile">
+				<p>Sélectionner une image</p>
+				<div class="select-block">
+					<svg class="svg-circleplus" viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="45" fill="#b9cfcc"></circle>
+						<line x1=" 32.5" y1="50" x2="67.5" y2="50" stroke="#003c35" stroke-width="9"></line>
+						<line x1="50" y1="32.5" x2="50" y2="67.5" stroke="#003c35" stroke-width="9"></line>
+					</svg>
+					<input type="file" name="file" class="inputFile" id="dropbox" multiple accept="image/*" multiple
+						onchange="handleFiles(this.files)">
+				</div>
+			</div>
+
+			<div class="boxWrapper">
+				<button onclick="CustomFilter('blackAndWhite')">N/B</button>
+				<button onclick="CustomFilter('grayscale')">Gris</button>
+				<button onclick="CustomFilter('sepia')">Sepia</button>
+				<button onclick="CustomFilter('invertColor')">Inversion</button>
+				<button onclick="CustomFilter('blur')">Flouter</button>
+				<button onclick="CustomFilter('sobel')">Sobel</button>
+
+				<button onclick="CustomFilter('rotationHorizontale')">Rotation horizontale</button>
+				<button onclick="CustomFilter('rotationVerticale')">Rotation verticale</button>
+
+				<button onclick="CustomFilter('recadrerPlusWidth')">Recadre largeur +</button>
+				<button onclick="CustomFilter('recadrerMoinsWidth')">Recadre largeur -</button>
+				<button onclick="CustomFilter('recadrerPlusHeight')">Recadre hauteur +</button>
+				<button onclick="CustomFilter('recadrerMoinsHeight')">Recadre hauteur -</button>
+
+				<button disabled="disabled">Button</button>
+				<button disabled="disabled">Disabled</button>
+			</div>
+
+			<div class="containSlider">
+				<div class="slider">
+					<p>Eclaircissement :</p>
+					<input id="brightness" type="range" max="5" min="1" value="0" onchange="CustomFilter('brightness')">
+				</div>
+				<div class="slider">
+					<p>Contraste :</p>
+					<input id="contrast" type="range" max="5" min="1" onchange="CustomFilter('contrast')">
+				</div>
+				<div class="slider">
+					<p>Saturation :</p>
+					<input id="saturate" type="range" max="5" min="1" onchange="CustomFilter('saturate')">
+				</div>
+				<div class="slider">
+					<p>Inverser les couleurs :</p>
+					<input id="hue-rotate" type="range" max="4" min="1" onchange="CustomFilter('hue-rotate')">
+				</div>
+				<div class="slider">
+					<p>Ajouter sa citation :</p>
+					<input class="textCustom" type="text" id="text" onchange="CustomFilter('text')"
+						placeholder="Entrer votre citation et cliquer sur Enter.">
+				</div>
+			</div>
+
+			<a href="#" id="expoter">
+				<button>Exporter</button>
+			</a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/dropImage.js"></script>
+	<script type="text/javascript" src="js/filter.js"></script>
+	<script type="text/javascript" src="js/filterSobel.js"></script>
+	<script type="text/javascript" src="js/canvasFilter.js"></script>
+	<script type="text/javascript" src="js/recadrerRotation.js"></script>
+	<script type="text/javascript" src="js/textCanvas.js"></script>
+	<script type="text/javascript" src="js/codeFilter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!--Langage (ici utf-8)-->
+	<meta charset="utf-8">
+	<!--Utiliser pour XHTML et HTML4-->
+	<!--
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	-->
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="images/favicon/Christophe.png" />
+	<!--Meta description-->
+	<meta name="description" content="Portfolio de Christophe WANG étudiant en DUT MMI">
+	<meta name="keywords" content="Portfolio, Portfolio web, Portfolio WEB">
+	<meta name="author" content="Christophe WANG">
+	<!--Vue initial entre mobile | Tablette | PC-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Pour les appareils Apple et BlackBerry-->
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<!--Feuille de style CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Portfolio</title>
+</head>
+<body>
+	<!--Slide Horizontal-->
+	<div class="outer-horizontal" style="display: none;" id="navigation">
+		<div class="horizontal">
+			<!--1-->
+			<!--Slide 1-->
+			<div class="slide one" id="one">
+				<!--Slide 1 Flip carte-->
+				<section>
+					<h1 class="titre_slide1">Site web de Christophe</h1>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img src="images/photos/Christophe.jpg" alt="Avatar_christophe" style="width:100%;height:100%;">
+							</div>
+							<div class="flip-card-back">
+								<span id="flip_h2"><b>Christophe WANG</b></span> 
+								<span id="flip_h2">Etudiant en Deuxième année MMI</span>
+								<br>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--Slide 1 Présentation-->
+				<article class="presentation">
+					<h3 style="font-size: 24px;">Présentation</h3>
+					<p>J'ai une attirance pour la programmation, l'aspect graphique et l'animation depuis ma tendre enfance. Elle provient sans aucun doute des bandes dessinées, des jeux vidéos et des émissions de télévision dans le style cartoons.</p>
+						<a id="for_button" href="liens/CV.pdf" target="_blank"><button>Curriculum Vitae</button></a>
+					</article>
+				</div>
+				<!--Fin Slide 1-->
+				<!--Fin 1-->
+				<!--2-->
+				<div class="outer-vertical">
+					<div class="vertical">
+						<!--Slide 2-->
+						<div class="slide two" id="two">
+							<a class="scroll-link horizontal_skill">
+								<svg class="mouse_horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+									<g fill="none" fill-rule="evenodd">
+										<rect width="70" height="118" x="1.5" y="1.5" stroke="#2F4F4F" stroke-width="3" rx="36"/>
+										<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#2F4F4F"/>
+									</g>
+								</svg>
+							</a>
+							<a class="scroll-link vertical_skill" style="display: none;">
+								<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+									<g fill="none" fill-rule="evenodd">
+										<rect width="70" height="118" x="1.5" y="1.5" stroke="#2F4F4F" stroke-width="3" rx="36"/>
+										<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#2F4F4F"/>
+									</g>
+								</svg>
+							</a>
+							<h1>Compétences</h1>
+						</div>
+						<!--Fin Slide 3-->
+						<!--Page 2-->
+						<div class="page" id="page_competences">
+							<!--Compétences graphique-->
+							<div class="col-md-12 example-title">
+								<h2>Mes compétences</h2>
+							</div>
+							<ul class="skills-bar-container">
+								<li>
+									<div class="progressbar-title">
+										<h3>HTML | CSS</h3>
+										<span class="percent" id="html-pourcent"></span>
+									</div>
+									<div class="bar-container">
+										<span class="progressbar progressred" id="progress-html"></span>
+									</div>
+								</li>
+								<li>
+									<div class="progressbar-title">
+										<h3>Unity | Vuforia | C#</h3>
+										<span class="percent" id="unity-pourcent"></span>
+									</div>
+									<div class="bar-container">
+										<span style="background-color:blue;" class="progressbar" id="progress-unity"></span>
+									</div>
+								</li>
+
+								<li>
+									<div class="progressbar-title">
+										<h3>JavaScript | Jquery</h3>
+										<span class="percent" id="javascript-pourcent"></span>
+									</div>
+									<div class="bar-container">
+										<span class="progressbar progresspurple" id="progress-javascript"></span>
+									</div>
+								</li>
+
+								<li>
+									<div class="progressbar-title">
+										<h3>PHP</h3>
+										<span class="percent" id="php-pourcent"></span>
+									</div>
+									<div class="bar-container">
+										<span class="progressbar progressorange" id="progress-php"></span>
+									</div>
+								</li>
+
+								<li>
+									<div class="progressbar-title">
+										<h3>Java</h3>
+										<span class="percent" id="java-pourcent"></span>
+									</div>
+									<div class="bar-container">
+										<span class="progressbar progressgreen" id="progress-java"></span>
+									</div>
+								</li>
+
+								<li>
+									<div class="progressbar-title">
+										<h3>Photoshop | Illustrator | Indesign</h3>
+										<span class="percent" id="adobe-pourcent"></span>
+									</div>
+									<div class="bar-container">
+										<span class="progressbar progressgreen" id="progress-adobe"></span>
+									</div>
+								</li>
+
+								<li>
+									<div class="progressbar-title">
+										<h3>Adobe Première Pro | Davinci Resolve</h3>
+										<span class="percent" id="audiovisuel-pourcent"></span>
+									</div>
+									<div class="bar-container">
+										<span class="progressbar progressgreen" id="progress-audiovisuel"></span>
+									</div>
+								</li>
+
+								<li>
+									<div class="progressbar-title">
+										<h3>Blender</h3>
+										<span class="percent" id="blender-pourcent"></span>
+									</div>
+									<div class="bar-container">
+										<span class="progressbar progressgreen" id="progress-blender"></span>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+						<!--Slide 2 Mon parcours scolaire-->
+						<div class="page">	
+							<div class="row">
+								<div class="col-md-12 example-title" id="parcours">
+									<h2>Mon parcours scolaire</h2>
+								</div>
+								<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+									<ul class="timeline timeline-centered">
+										<li class="timeline-item">
+											<div class="timeline-info">
+												<span>2019-2020</span>
+											</div>
+											<div class="timeline-marker"></div>
+											<div class="timeline-content">
+												<h3 class="timeline-title">2è année DUT MMI (Métiers du Multimédia et de l'Internet)</h3>
+												<p>IUT de Vélizy, 10-12 Avenue de l'Europe, 78140 Vélizy-Villacoublay<br>
+													Option : Théorie des jeux | Réalité Virtuel | Marketing et communication | Wordpress avancé | mathématiques avancées.
+													<br>> Conception d'un dossier de Level Design.
+													<br>> Modélisation et Animation d'un personnage sur Blender.
+													<br>> Apprentissage des langages C# avec Unity et Java.
+													<br>> Usage de la réalité augmentée Vuforia avec Unity.
+													<br>> Apprentissage des langages JQuery et AJAX.
+													<br>> Bientôt AngularJs et Symphony.</p>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>2018-2019</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">1er année DUT MMI (Métiers du Multimédia et de l'Internet)</h3>
+													<p>Pôle Universitaire de Vichy, 1 Avenue des Célestins, 03200 Vichy<br>
+														Usage de logiciels de retouches et de designs (Photoshop, Illustrator, Indesign).
+														<br>> Cours de post production, de scénario, de production, de sons et développement d'un court métrage (Adobe Première Pro, DaVinci Resolve 15).
+														<br>> Notion de marketing, de commerce , de communication.
+														<br>> Apprentissage de langages de programmation (Javascript, PHP).
+													</p>
+												</div>
+											</li>
+											<li class="timeline-item period">
+												<div class="timeline-info"></div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h2 class="timeline-title">BACCALAURÉAT</h2>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>2018</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Terminale STL SPCL (Sciences et technologies en Laboratoire option Science Physiques et Chimies en Laboratoire)</h3>
+													<p>Lycée Jacques Coeur, 108 Rue Jean Baffier, 18000 Bourges<br></p>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>2017</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Première STL SPCL (Sciences et technologies en Laboratoire option Science Physiques et Chimies en Laboratoire)</h3>
+													<p>Lycée Jacques Coeur, 108 Rue Jean Baffier, 18000 Bourges</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--Slide 2 Mes expériences-->
+							<div class="page">	
+								<div class="row">
+									<div class="col-md-12 example-title" id="experiences">
+										<h2 style="font-size: 30px;">Mes expériences</h2>
+									</div>
+									<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+										<ul class="timeline timeline-centered">
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>avril 2020 - juin 2020</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Stage en 2e année DUT MMI</h3>
+													<p>Papoudring-IUT de Vélizy<br>
+														Développeur du révéil sur Android et iOS à l'aide de Cordova.<br>
+													Création des scripts PHP pour accéder aux bases de données web.</p>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>septembre 2019 - avril 2020</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Projets d'étude en 2e année DUT MMI</h3>
+													<p>StorySpot - Musée Art Histoire Meudon<br>2è année DUT MMI (Métiers du Multimédia et de l'Internet)
+														Développement du site web de StorySpot<br>> Création d'un jeu AR sur Unity.</p>
+													</div>
+												</li>
+												<li class="timeline-item period">
+													<div class="timeline-info"></div>
+													<div class="timeline-marker"></div>
+													<div class="timeline-content">
+														<h2 class="timeline-title">Première année DUT MMI ^</h2>
+													</div>
+												</li>
+												<li class="timeline-item">
+													<div class="timeline-info">
+														<span>avril 2019 - juin 2019</span>
+													</div>
+													<div class="timeline-marker"></div>
+													<div class="timeline-content">
+														<h3 class="timeline-title">Projets d'étude en 1er année DUT MMI</h3>
+														<p>Jumping international de Vichy CSI<br>> Montage vidéo pour un spot vidéo (Adobe Première Pro).<br>> Conception de la plaquette tarifaire de l'évènement (Illustrator, Indesign).
+														</p>
+													</div>
+												</li>
+												<li class="timeline-item">
+													<div class="timeline-info">
+														<span>janvier 2019 - avril 2019</span>
+													</div>
+													<div class="timeline-marker"></div>
+													<div class="timeline-content">
+														<h3 class="timeline-title">Exposition des  "toiles et des mots"</h3>
+														<p>Modélisation d'une affiche promotionnelle (Photoshop).
+															<br>> Maquettage du lieu d'exposition et de l'événement</p>
+														</div>
+													</li>
+													<li class="timeline-item period">
+														<div class="timeline-info"></div>
+														<div class="timeline-marker"></div>
+														<div class="timeline-content">
+															<h2 class="timeline-title">Lycée ^</h2>
+														</div>
+													</li>
+													<li class="timeline-item">
+														<div class="timeline-info">
+															<span>septembre 2017 - juin 2018</span>
+														</div>
+														<div class="timeline-marker"></div>
+														<div class="timeline-content">
+															<h3 class="timeline-title">Association Lycéenne de Jacques Coeur</h3>
+															<p>YOUP<br>Secrétaire de l'association.<br>> Bilans et un compte rendu de chaque réunion<br>> Gestion du temps et de l'organisation.</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--Fin Page 2-->
+								</div>
+							</div>
+							<!--Fin 2-->
+							<!--3-->
+							<div class="outer-vertical">
+								<div class="vertical">
+									<!--Slide 3-->
+									<div class="slide three" id="three">
+										<h1>Réalisations</h1>    			
+										<a class="scroll-link horizontal_realisations">
+											<svg class="mouse_horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+												<g fill="none" fill-rule="evenodd">
+													<rect width="70" height="118" x="1.5" y="1.5" stroke="#2F4F4F" stroke-width="3" rx="36"/>
+													<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#2F4F4F"/>
+												</g>
+											</svg>
+										</a>
+										<a class="scroll-link vertical_realisations" style="display: none;">
+											<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+												<g fill="none" fill-rule="evenodd">
+													<rect width="70" height="118" x="1.5" y="1.5" stroke="#2F4F4F" stroke-width="3" rx="36"/>
+													<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#2F4F4F"/>
+												</g>
+											</svg>
+										</a>
+									</div>
+									<!--Fin Slide 3-->
+									<!--Page 3-->
+									<div class="page" id="page_realisations">
+										<!--Slide 3 Tableau Réalisations-->
+										<section style="height: 100%; background-color: #778899;">
+											<div class="container_tableau">
+												<!--Slide 3 Choix Réalisations-->
+												<ul>
+													<li class="button active" data-filter='all'>Tout</li>
+													<li class="button" data-filter='unity'>Unity</li>
+													<li class="button" data-filter='website'>Site Web</li>
+													<li class="button" data-filter='graphisme'>Graphisme</li>
+													<li class="button" data-filter='audiovisuel'>Audiovisuel</li>
+													<div style="clear: both;"></div>
+												</ul>
+												<!--Slide 3 Box Réalisations-->
+												<div class="box filter website" id="portfolio_web">{ Site Web }<br><br>Site Portfolio</div>
+
+												<div class="box filter graphisme" id="bateau_3D">[ Graphisme ]<br><br>Bateau 3D</div>
+												<div class="box filter graphisme" id="coffre_3D">[ Graphisme ]<br><br>Coffre 3D</div>
+
+												<div class="box filter unity" id="storyspot">{ Unity }<br><br>StorySpot</div>
+
+												<div class="box filter website" id="site_storyspot">{ Site Web }<br><br>Site StorySpot</div>
+
+
+												<div class="box filter graphisme" id="gif_anime">[ Graphisme ]<br><br>GIF animé</div>
+												<div class="box filter graphisme" id="blason">[ Graphisme ]<br><br>Blason</div>
+												<div class="box filter graphisme" id="logo_iut_vichy">[ Graphisme ]<br><br>Logo IUT Vichy</div>
+
+												<div class="box filter audiovisuel" id="la_mort">( Audiovisuel )<br><br>La Mort</div>
+							<!--
+							<div class="box filter unity">{ Unity }<br><br>Sans contenu</div>
+							<div class="box filter website">{ Site Web }<br><br>Sans contenu</div>
+							<div class="box filter graphisme">[ Graphisme ]<br><br>Sans contenu</div>
+							<div class="box filter audiovisuel">( Audiovisuel )<br><br>Sans contenu</div>-->
+						</div>
+					</section>
+					<!--Slide 3 Résultat-->
+					<section class="page" id="resultat">
+						<div class="resultat">
+							<div class="col-md-12 example-title">
+								<h2 id="resultat_titre"></h2>
+								<h2 id="resultat_s_titre"></h2>
+							</div>
+							<div class="resultat_contenu_description">
+								<a id="resultat_target" href="" target="_blank"><img id="resultat_image" alt="description" style="  border-radius: 20px;"></a>
+								<p id="resultat_description"></p>
+							</div>
+							<p id="resultat_description_partie2"></p>
+						</div>
+					</section>
+				</div>
+				<!--Fin Page 3-->
+			</div>
+		</div>
+		<!--Fin 3-->
+		<!--4-->
+		<div class="outer-vertical">
+			<div class="vertical">
+				<!--Slide 4-->
+				<div class="slide four" id="four">
+					<h1>À propos</h1>
+					<a class="scroll-link horizontal_A_propos">
+						<svg class="mouse_horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+							<g fill="none" fill-rule="evenodd">
+								<rect width="70" height="118" x="1.5" y="1.5" stroke="#2F4F4F" stroke-width="3" rx="36"/>
+								<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#2F4F4F"/>
+							</g>
+						</svg>
+					</a>
+					<a class="scroll-link vertical_A_propos" style="display: none;">
+						<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+							<g fill="none" fill-rule="evenodd">
+								<rect width="70" height="118" x="1.5" y="1.5" stroke="#2F4F4F" stroke-width="3" rx="36"/>
+								<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#2F4F4F"/>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<!--Fin Slide-->
+				<!--Page 4-->
+				<div>
+					<div class="col-md-12 example-title" id="contact">
+						<h1 class="h1_contact">Contact</h1>
+					</div>
+					<!--Slide 4 Mail-->
+					<section class="page contact_mail">
+						<form class="form_mail" action="php/mail.php" method="POST" enctype="multipart/form-data">
+							<label for="name" id="texte">Entrer votre nom : </label><br>
+							<input type="text" id="name" name="name" placeholder="Nom" required><br>
+
+							<label for="email" id="texte">Entrer votre email:</label><br>
+							<input type="email" id="email" name="email" placeholder="exemple@mail.com"  required> <br>
+
+							<label for="subject" id="texte">Sujet :</label><br>
+							<input type="text" id="subject" name="subject" placeholder="Object"  required> <br>
+
+							<label for="message" id="texte">Votre message :</label><br>
+							<textarea type="text" id="message" name="message" placeholder="Votre texte ..."  required></textarea><br> 
+
+							<label for="myfile" style="margin-right: 5%;">Selectionner votre fichier :</label>
+							<input type="file" id="file" name="attachment" style="color: #F5F5DC"> <br>
+
+							<div id="texte" class="g-recaptcha" data-sitekey="6Ld7dwEVAAAAAIo9gEOlBpIj3yiikc98B0D_WVbC"></div><br><br>
+
+							<input type="submit" id="Envoyer" value="Envoyer" name="Envoyer">
+
+							<div id="reponse">
+
+							</div>
+						</form>
+					</section>
+					<!--Slide 4 Adresse-->
+					<section class="page adresse" id="adresse">
+						<div class="col-md-12 example-title">
+							<h1 style="font-size: 30px;">Lieu de ma formation</h1>
+						</div>
+							<h2>IUT de Vélizy-Villacoublay</h2>
+						<section class="contact">
+							<img class="icon" onclick="copyToClipboard_phone()"  src="images/icon/phone.svg" alt="lieu">
+							<a id="copier_phone" href="tel:0652864045" style="margin-top:3%" onclick="copyToClipboard_phone()">Tél : 06 52 86 40 45</a>
+
+							<img class="icon" onclick="copyToClipboard_email()" src="images/icon/mail.svg" alt="mail">
+							<a id="copier_email" href="mailto:christophe.wang.pro@gmail.com" style="margin-top:3%" onclick="copyToClipboard_email()">christophe.wang.pro@gmail.com</a>
+						</section>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.001742894895!2d2.2160403157236432!3d48.78185697928012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67bd6e0de7851%3A0xbabe984ad233bd22!2sIUT%20de%20V%C3%A9lizy!5e0!3m2!1sfr!2sfr!4v1573510910183!5m2!1sfr!2sfr" class="mapsGoogle" frameborder="0"></iframe>
+					</section>
+
+					<!--Slide 4 Réseaux sociaux-->
+					<div id="page reseau_sociaux" id="medias">
+						<div class="col-md-12 example-title">
+							<h2 style="font-size: 30px;">Mes réseaux sociaux</h2>
+						</div>
+						<aside style="display: flex;flex-direction: row;justify-content: space-around; margin: 5%;">
+							<a class="reseau" href="https://www.linkedin.com/in/christophe-wang-39a845182/" target="_blank"><img src="images/icon/linkedin.svg" alt="linkedin"></a>
+							<a class="reseau" href="https://www.facebook.com/christophe.wang.52" target="_blank"><img class="reseau" src="images/icon/facebook.svg" alt="facebook"></a>
+							<a class="reseau" href="https://www.instagram.com/christophe_uou/" target="_blank"><img src="images/icon/instagram.svg" alt="instagram"></a>
+							<a class="reseau" href="https://twitter.com/Christophe_UoU" target="_blank"><img class="reseau" src="images/icon/twitter.svg" alt="twitter"></a><!--
+							<a href="https://www.tumblr.com/blog/chugocw"><img class="reseau" src="images/logos/logoInstagram.png"></a>
+							<a href="https://www.pinterest.fr/chugo_cw/"><img class="reseau" src="images/logos/logoInstagram.png"></a>
+							<a href="#discord : Chugo#6772"><img class="reseau" src="images/logos/logoInstagram.png"></a>-->
+						</aside>
+					</div>
+					<div class="page" id="Ressources">
+						<section>
+							<div class="col-md-12 example-title">
+								<h2 style="font-size: 30px;">Ressources</h2>
+							</div>
+							<aside style="display: flex; flex-direction: column; text-align: center; margin: 2%;">
+								<a href='https://fr.freepik.com/vecteurs-libre/multimedia-boutons-noir-blanc_850225.htm#page=1&query=play%20icon&position=6'>Icones de Reload et de Play.</a>
+								<a href='https://fr.freepik.com/vecteurs-libre/histoires-gradient-instagram_6702712.htm'>Icones de téléphone et d'émail.</a>
+								<a href='https://fr.freepik.com/vecteurs-libre/gradient-collection-logo-medias-sociaux_5814487.htm'>Icones pour les réseaux sociaux.</a>
+								<a href="https://unity.com/brand">Le logo Unity dans la partie réalisation.</a>
+								<a href='https://fr.freepik.com/vecteurs-libre/illustration-concept-programmation-paire_8449769.htm#page=1&query=web&position=5'>Le visuel représentant le web dans la partie réalisation.</a>
+								<a href='https://fr.freepik.com/vecteurs-libre/illustration-concept-communaute-conception_6610841.htm#page=1&query=graphisme&position=38'>Le visuel représentant le graphisme dans la partie réalisation.</a>
+								<a href='https://fr.freepik.com/vecteurs-libre/influenceur-enregistre-nouveau-concept-video_7872689.htm#page=1&query=camera&position=11'>Le visuel représentant l'audiovisuel dans la partie réalisation.</a>
+								<a href='https://www.freepik.com/free-vector/3d-modeling-concept-illustration_9793473.htm'>Le visuel représentant la modélisation dans la partie réalisation.</a>
+							</aside>
+						</section>
+					</div>
+				</div>
+				<!--Fin Page 4-->
+			</div>
+		</div>
+		<!--Fin 4-->
+		</div>
+	</div>
+	<!--Fin Slide Horizontale-->
+
+
+
+
+	<!--Button Scroll Top-->
+	<button id="scroll_top" title="Scroll Top">Top</button>
+
+	<div class="load">
+		<div class="loading"></div>
+
+		<div class="abs-center">
+			<h1 class="load_h1">Chargement</h1>
+			<p id="percent"></p>
+			<span id="bar"></span>
+			<div style="display: flex;justify-content: space-around; margin-top: 2%;">
+				<div class="button_loading" id="reset-load"><img src="images/icon/actualiser.svg"></div>
+				<div class="button_loading" id="site"><img  src="images/icon/play.svg"></div>
+			</div>
+		</div>
+		<div class="souris original"></div>
+	</div>
+
+<!--Menu sur le côté gauche-->
+
+<div id="menu">
+	<div class="hamburger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</div>
+	<div class="menu-inner">
+		<ul style="margin-left: 10%;height: 50%;color: #F5F5DC;display: flex;flex-direction: column;justify-content: space-around;">
+			<li id="rubrique_one"></li>
+			<li id="rubrique_two"></li>
+			<li id="rubrique_three"></li>
+			<li id="rubrique_four"></li>
+		</ul>
+	</div>
+	<svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
+	</svg>
+</div>
+
+
+
+<!--Accès à la bibliothèques Jquery-->
+<script type="text/javascript" src="javascript/jquery/jquery.js"></script>
+<!--Script Javascript et Jquery-->
+<script type="text/javascript" src="javascript/script.js"></script>
+<script type="text/javascript" src="javascript/jquery/loading.js"></script>
+<script type="text/javascript" src="javascript/jquery/script.js"></script>
+<!--Pour confirmer le navigateur-->
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.3.0.js"></script>
+<!--Capcha-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

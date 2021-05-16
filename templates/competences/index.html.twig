@@ -1,0 +1,29 @@
+{% extends 'layout/layout-main.html.twig' %}
+
+{% block title %}Compétences{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('css/competences') }}
+{% endblock %}
+
+{% block content %}
+    <h1>Compétences</h1>
+
+    <div class="scroll-top hidden">
+        <i class="fas fa-chevron-circle-up fa-3x"></i>
+    </div>
+
+    {% include 'competences/_diamond-skill.html.twig' only %}
+
+    {% include 'competences/_progress.html.twig' only %}
+
+    {% include 'competences/_parcours.html.twig' only %}
+
+    {% include 'competences/_experiences.html.twig' only %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('js/competences') }}
+{% endblock %}

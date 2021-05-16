@@ -1,0 +1,60 @@
+/* Header */
+
+.codrops-header {
+  // padding: 2em 1em 4em;
+  padding: 2em 1em;
+  text-align: center;
+
+  h1 {
+    margin: 0.5em 0 0;
+    letter-spacing: -1px;
+    font-size: 3em;
+    line-height: 1;
+    font-weight: normal;
+
+    span {
+      display: block;
+      padding: 0.5em 0 1em;
+      color: #999;
+      font-weight: normal;
+      font-size: 0.45em;
+      letter-spacing: 0;
+    }
+  }
+}
+
+/* Filter */
+.codrops-filters {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  .filter {
+    cursor: pointer;
+    width: 138px;
+    margin: 20px;
+    padding: 10px;
+    color: $white;
+
+    i {
+      margin-right: 8px;
+    }
+
+    &:hover, &:active, &.active {
+      color: $color-primary;
+    }
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .codrops-header {
+    padding: 2em 5%;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .codrops-header h1 {
+    font-size: 2.15em;
+  }
+}

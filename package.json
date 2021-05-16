@@ -1,0 +1,42 @@
+{
+  "devDependencies": {
+    "@babel/preset-react": "^7.13.13",
+    "@symfony/stimulus-bridge": "2.0.0",
+    "@symfony/webpack-encore": "^1.1.2",
+    "core-js": "^3.9.1",
+    "jquery": "^3.6.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^11.0.1",
+    "stimulus": "^2.0.0",
+    "webpack-notifier": "1.6.0"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hooks": "^1.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
+    "three": "^0.128.0"
+  },
+  "name": "website",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "description": ""
+}

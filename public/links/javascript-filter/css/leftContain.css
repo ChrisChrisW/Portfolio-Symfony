@@ -1,0 +1,34 @@
+/* -------
+CONTAIN ON LEFT
+----------*/
+
+.boxImg {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.containPhoto {
+  position: relative;
+  height: 100%;
+}
+.containPhoto > input,
+.containPhoto > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.containPhoto > input {
+  opacity: 0.01;
+  z-index: 2;
+}
+
+.photo {
+  background: #e7f0ef;
+  z-index: 1;
+}

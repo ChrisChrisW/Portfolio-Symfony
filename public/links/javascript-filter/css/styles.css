@@ -1,0 +1,16 @@
+/* -------
+GENERALS
+----------*/
+@import "general.css";
+
+/* -------
+CUSTOMS PARTS
+----------*/
+@import "inputRange.css";
+@import "inputText.css";
+
+/* -------
+INDEX CONTAIN
+----------*/
+@import "leftContain.css";
+@import "rightContain.css";
