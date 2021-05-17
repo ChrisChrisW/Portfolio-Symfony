@@ -1,0 +1,95 @@
+@import "../template/scss/color";
+
+@font-face {
+  font-family: ScorchedEarth;
+  src: url("../fonts/ScorchedEarth.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: ScorchedEarth, Arial, serif;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.container {
+  background: $black-lighter;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .slime {
+    width: 46%;
+  }
+
+  .status {
+    width: 60%;
+    margin: 50px 15%;
+    padding-top: 20px;
+    text-align: center;
+    color: $color-primary-light;
+    font-size: 3.6rem;
+    letter-spacing: 5px;
+    border-top: 5px solid $color-primary-light;
+
+    span {
+      display: block;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    .slime {
+      width: 36%;
+    }
+  }
+}
+
+@media (min-width: 996px) {
+  .container {
+    .slime {
+      width: 30%;
+    }
+
+    .status {
+      font-size: 4.6rem;
+      span {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    .slime {
+      width: 25%;
+    }
+
+    .status {
+      font-size: 5.6rem;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    .status {
+      font-size: 6.6rem;
+    }
+  }
+}
