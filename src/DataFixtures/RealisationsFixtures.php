@@ -166,8 +166,8 @@ class RealisationsFixtures extends Fixture
                 'link' => "http://storyspot.iut-velizy.uvsq.fr/StorySpot/"
             ], [
                 'title' => 'GIF animé',
-                'description' => 'Une petite description + un CV',
-                'filter' => "Le GIF est fait sur Photoshop, grâce à l'outil vidéo de Photoshop. L'image est inspirée d'une série et d'une BD appelé WAKFU. Ce dessin a été entièrement dessiné par moi-même. J'ai pris beaucoup d'attention sur les ombrages du personnage",
+                'description' => "Le GIF est fait sur Photoshop, grâce à l'outil vidéo de Photoshop. L'image est inspirée d'une série et d'une BD appelé WAKFU. Ce dessin a été entièrement dessiné par moi-même. J'ai pris beaucoup d'attention sur les ombrages du personnage",
+                'filter' => 'graphisme',
                 'link' => "links/graphisme/gif/wang_christophe.gif"
             ], [
                 'title' => 'Blason',
