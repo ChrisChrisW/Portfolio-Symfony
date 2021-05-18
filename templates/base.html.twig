@@ -9,11 +9,26 @@
         <link rel="icon" type="image/png" href="{{ asset('build/images/icon/favicon.png') }}" />
         <link rel="apple-touch-icon" href="{{ asset('build/images/icon/favicon.png') }}" />
         <title>{% block title %}Site{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('css/load') }}
+        {% endblock %}
     </head>
 
     <body>
+        <div class="load">
+            <div class="load-wrapper">
+                <div class="load-circle"></div>
+                <div class="load-circle"></div>
+                <div class="load-circle"></div>
+                <div class="load-shadow"></div>
+                <div class="load-shadow"></div>
+                <div class="load-shadow"></div>
+            </div>
+            <span class="load-text">Loading</span>
+        </div>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('js/load') }}
+        {% endblock %}
     </body>
 </html>

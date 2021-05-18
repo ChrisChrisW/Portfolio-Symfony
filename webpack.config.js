@@ -27,6 +27,7 @@ Encore
 
     .addEntry('js/particles', './assets/three/particles/main.js')
     .addEntry('js/show', './assets/three/show/main.js')
+    .addEntry('js/load', './assets/load/main.js')
 
     .addStyleEntry('css/homepage', './assets/homepage/main.scss')
     .addStyleEntry('css/main', './assets/template/scss/main.scss')
@@ -36,6 +37,7 @@ Encore
     .addStyleEntry('css/contact', './assets/contact/main.scss')
 
     .addStyleEntry('css/error', './assets/error/main.scss')
+    .addStyleEntry('css/load', './assets/load/main.scss')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     //.enableStimulusBridge('./assets/controllers.json')

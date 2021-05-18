@@ -3,6 +3,7 @@
 {% block title %}Accueil{% endblock %}
 
 {% block stylesheets %}
+    {{ parent() }}
     {{ encore_entry_link_tags('css/homepage') }}
 {% endblock %}
 
@@ -11,5 +12,6 @@
 {% endblock %}
 
 {% block javascripts %}
+    {{ parent() }}
     {{ encore_entry_script_tags('js/homepage') }}
 {% endblock %}
