@@ -8,6 +8,7 @@
 * ReactJS
 * Three.js
 * SCSS
+* Cookies -> Axeptio
 
 ## Pages
 * Accueil
