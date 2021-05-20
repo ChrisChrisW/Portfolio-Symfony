@@ -1,14 +1,10 @@
-@font-face {
-  font-family: CatCafe;
-  src: url("../../fonts/CatCafe.ttf");
-}
+@import './font';
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-  font-family: CatCafe, Arial, fantasy;
 
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */

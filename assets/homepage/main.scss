@@ -1,8 +1,10 @@
+@import "../template/scss/color";
+@import "../template/scss/font";
+
 *, *::before, *::after {
   text-decoration: none;
   box-sizing: border-box;
   position: relative;
-  color: white;
 }
 
 html, body {
@@ -10,12 +12,11 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 3vmin;
 }
 
 html {
-  background: #151515;
-  color: #fff;
+  background: $black-light;
+  color: $white;
   overflow: hidden;
 }
 
@@ -23,6 +24,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1, h2, h3, h4, p, a {
+  color: $white;
+  font-size: 3vmin;
 }
 
 .slides {
@@ -61,18 +67,6 @@ body {
       right: -50%;
     }
   }
-}
-
-.slide {
-  //transform-style: preserve-3d;
-  // border: solid 1px red;
-
-  // &[data-active] {
-  //   .slideContent > * {
-  //     transform: none;
-  //     opacity: 1;
-  //   }
-  // }
 }
 
 .slideContent {
