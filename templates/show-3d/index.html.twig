@@ -1,8 +1,9 @@
-{% extends 'layout/layout.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block title %}{{ stl }} en 3D{% endblock %}
 
 {% block stylesheets %}
+    {{ parent() }}
     <style>
         * {
             margin: 0;
@@ -17,5 +18,6 @@
 {% endblock %}
 
 {% block javascripts %}
+    {{ parent() }}
     {{ encore_entry_script_tags('js/show') }}
 {% endblock %}

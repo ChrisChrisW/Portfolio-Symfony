@@ -42,22 +42,22 @@ $(document).ready(function() {
         if (menuExpanded == false) {
             $(this).parent().addClass("expanded");
             menuExpanded = true;
-            console.log("c'est bon");
+            // console.log("c'est bon");
         } else {
             menuExpanded = false;
             $(this).parent().removeClass("expanded");
-            console.log("c'est pas bon");
+            // console.log("c'est pas bon");
         }
     });
     $(".hamburger, #blob").on("click", function () {
         if (menuExpanded == false) {
             $(this).parent().addClass("expanded");
             menuExpanded = true;
-            console.log("c'est bon2");
+            // console.log("c'est bon2");
         } else {
             $(".menu-inner").parent().removeClass("expanded");
             menuExpanded = false;
-            console.log("c'est pas bon 2");
+            // console.log("c'est pas bon 2");
         }
     });
 

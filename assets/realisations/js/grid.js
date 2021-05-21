@@ -231,7 +231,7 @@
             else if (href.includes('.html') || href.includes('.php')) link.innerHTML = "<i class=\"fas fa-code\"></i> Ouvrir le lien";
             else if (href.includes('gitlab')) link.innerHTML = "<i class=\"fab fa-gitlab\"></i> Ouvrir le lien gitlab";
             else if (href.includes('github')) link.innerHTML = "<i class=\"fab fa-github\"></i> Ouvrir le lien github";
-            else link.innerHTML = "Ouvrir";
+            // else link.innerHTML = "Ouvrir";
 
             details.appendChild(link);
             this.previewDescriptionEl.appendChild(details);

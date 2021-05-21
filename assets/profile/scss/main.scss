@@ -4,6 +4,10 @@
 
 @import "../../template/scss/color";
 
+body {
+  overflow: hidden;
+}
+
 .container {
   background: $black-lighter;
   width: 100vw;
@@ -257,12 +261,13 @@ $back-col: $whitesmoke;
 
   footer{
     position: relative;
-    height: 65px;
+    height: 60px;
     background-color: $sec-col;
     text-align: center;
     p{
       position: absolute;
-      bottom: 10px; left: 0;
+      bottom: 15px;
+      left: 0;
       width: 100%;
       z-index: 1;
       a{
