@@ -19,7 +19,7 @@ class ProfileDataFixtures extends Fixture
         $profile = new Profile();
         $profile->setFirstname("Christophe");
         $profile->setLastname("WANG");
-        $profile->setDescription("Je suis passionnée par l’informatique et l’aspect artistique. J’aime particulière apprendre de nouvelles choses dans ses deux domaines. En ce moment, j’accumule des connaissances dans l’animation et la 3D. J’aimerai plus tard participer à la création d’un jeu vidéo.");
+        $profile->setDescription("Je suis passionné par l’informatique et l’aspect artistique. J’aime particulièrement apprendre de nouvelles choses dans ces deux domaines. En ce moment, j’accumule des connaissances dans l’animation et la 3D. J’aimerai plus tard participer à la création d’un jeu vidéo.");
         $profile->setCover('build/images/photo/Christophe.png');
         $profile->setCv('links/cv.pdf');
         $profile->setPortfolio('links/portfolio.pdf');
